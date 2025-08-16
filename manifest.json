@@ -1,0 +1,18 @@
+{
+  "name": "Valence Intranet Downloader",
+  "description": "This chrome extension lets you download multiple files on a teacher personal page.",
+  "version": "1.0",
+  "manifest_version": 3,
+   "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://intranet.iut-valence.fr/unepersonne/*",
+        "https://developer.mozilla.org/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": "dl.png"
+  }
+}
